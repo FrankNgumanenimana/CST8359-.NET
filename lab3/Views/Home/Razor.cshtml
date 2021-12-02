@@ -1,0 +1,17 @@
+﻿@*
+    
+*@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Razor";
+
+}
+<form asp-controller="Home" asp-action="Count" method="post">
+    <table>
+        <tr>
+            <td><p>Enter the number of bottles between 50 and 100: </p></td>
+            <td><input type="number" min="50" max="100" name="bottles"></td>
+            <td><button type="submit" name="Count" value="Count">Count!</button></td>
+        </tr>
+    </table>
+</form>

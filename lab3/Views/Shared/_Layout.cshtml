@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewData["Title"]</title>
+    <link href="~/css/StyleSheet.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+       
+        <div class="text-center">
+            <h1 class="display-4"><center>"Welcome to my First MVC web page"</center><br /></h1>
+            <p>
+                <center>
+                    Student name: Frank Ngumaneimana <br />
+
+                </center>
+            </p>
+        </div>
+        <p>
+
+        </p>
+        <br />
+        <br />
+        @Html.ActionLink("Home", "Index", "Home")
+        @Html.ActionLink("Show the song!", "Razor", "Home")
+        @Html.ActionLink("Person", "CreatePerson", "Home")
+
+    </header>
+    <div class="content">
+        @RenderBody()
+    </div>
+    <footer>
+
+        <p><center>To add CSS, created new file Style, then added a new Item whic was a style sheet from the visual stuio C# tool</center></p><br /><br />
+        <p>
+            <center>
+                Wecreate a layout view in any folder under the Views folder. However, it is recommended to create all the layout views in the Shared folder for easy maintenance purpose;<br />
+                To create a new layout view in Visual Studio, right-click on the Shared folder -> select Add -> click on New Scaffolded Item ->Razor view imports and Visual studio created View Imports file and ViewStart automatically;<br />
+            </center>
+        </p>
+        <p>
+            <center>
+                A Layout file allows us to reuse portions of View content (common elements) instead of implementing these visual elements on every page.<br />
+                There is no need to code our website header or footer more than once<br />
+                There is no need to have same JavaScript statements in every view file<br />
+                Once a Layout file is implemented it can be reused in each applicable View.cshtml file<br />
+            </center>
+        </p>
+        <br />
+        <br />
+
+
+    </footer>
+</body>
+</html>

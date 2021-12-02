@@ -1,0 +1,38 @@
+{
+  "dependencies": {
+    "storage1": {
+      "restored": true,
+      "restoreTime": "2021-07-13T19:44:36.6953093Z"
+    },
+    "secrets1": {
+      "restored": true,
+      "restoreTime": "2021-07-13T19:41:59.7957261Z"
+    },
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2021-07-13T19:42:12.4109822Z"
+    }
+  },
+  "parameters": {
+    "storage1.resourceGroupName": {
+      "Name": "storage1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "FrankLab5"
+    },
+    "storage1.subscriptionId": {
+      "Name": "storage1.subscriptionId",
+      "Type": "subscription",
+      "Value": "b7ab27ee-8204-46e8-8f76-ceae0f28d1aa"
+    },
+    "mssql1.subscriptionId": {
+      "Name": "mssql1.subscriptionId",
+      "Type": "subscription",
+      "Value": "b7ab27ee-8204-46e8-8f76-ceae0f28d1aa"
+    },
+    "mssql1.resourceGroupName": {
+      "Name": "mssql1.resourceGroupName",
+      "Type": "resourceGroup",
+      "Value": "franklab4"
+    }
+  }
+}

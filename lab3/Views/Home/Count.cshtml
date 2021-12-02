@@ -1,0 +1,41 @@
+﻿@*
+*@
+@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Count";
+
+    int bottles = ViewBag.numberBottle;
+}
+
+<form asp-controller="Home" asp-action="Razor" method="get">
+    <button type="submit" name="Count" value="Count">PlayAgain!</button>
+</form>
+
+@{ int i = bottles;
+    while (i >= 0)
+    {
+        if (i == 1)
+        {
+            <p>
+                1 green bottlee standing on the wall,<br/>
+                1 green bottlee standing on the wall,<br />
+                And if one green bottle should accidentally fall,<br />
+                There'll be no green bottle standing on the wall.<br />
+            </p>
+        }
+        else if (i == 0)
+        {
+            <p><br />There is no green bottle standing on the wall.</p><br />
+        }
+        else
+        {
+            <p>
+                @i green bottles hanging on the wall,<br />
+                @i green bottles hanging on the wall,<br />
+                And if one green bottle should accidentally fall,<br />
+                There'll be @(i - 1) green bottles hanging on the wall.<br />
+            </p>
+        }
+        i--;
+    }
+}
